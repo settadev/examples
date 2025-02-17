@@ -1,5 +1,5 @@
 setta-settings.json
 setta-meta-settings.json
-setta_code/
+**/setta_files/code
 .setta_backups
 __pycache__

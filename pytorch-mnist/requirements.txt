@@ -1,3 +1,0 @@
-torch
-torchvision==0.20.0
-setta
