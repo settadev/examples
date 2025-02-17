@@ -5,8 +5,8 @@ learning_rate:
 weight_decay: 
 lr_scheduler_type: 
 warmup_ratio: 
-logging_steps: 
-max_seq_length: 
+logging_steps: 10
+max_seq_length: 512
 
 ---
 overwrite_output_dir: 
