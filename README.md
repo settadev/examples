@@ -4,3 +4,8 @@
 # Examples
 
 Each folder in this repo is a self-contained [Setta](https://github.com/settadev/setta) project.
+
+| Example name | Description |
+| --- | --- |
+| Stream Diffusion Image to Image | A real-time drawing interface that creates AI-enhanced images as you sketch.
+| Transformer Reinforcement Learning (TRL) | Finetuning language models with different configurations
