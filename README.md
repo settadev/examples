@@ -7,5 +7,5 @@ Each folder in this repo is a self-contained [Setta](https://github.com/settadev
 
 | Example name | Description |
 | --- | --- |
-| Stream Diffusion Image to Image | A real-time drawing interface that creates AI-enhanced images as you sketch.
-| Transformer Reinforcement Learning (TRL) | Finetuning language models with different configurations
+| [Stream Diffusion Image to Image](https://github.com/settadev/examples/tree/main/stream_diffusion_img_to_img) | A real-time drawing interface that creates AI-enhanced images as you sketch.
+| [Transformer Reinforcement Learning (TRL)](https://github.com/settadev/examples/tree/main/trl_language_model_finetuning) | Finetuning language models with different configurations
