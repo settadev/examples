@@ -1,6 +1,6 @@
 # TRL Language Model Finetuning
 
-This is a basic example of how you can configure language model training runs.
+This is a basic example of how you can configure language model training runs, using the Hugging Face TRL library.
 
 ## Install packages
 
