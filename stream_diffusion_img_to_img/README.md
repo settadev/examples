@@ -1,3 +1,7 @@
+# Stream Diffusion Image to Image
+
+In this example, an AI diffusion model will generate an image based on your drawing, in near real-time speed.
+
 ## Install packages
 
 Activate your python environment and then run this command (the extra dot is important):
