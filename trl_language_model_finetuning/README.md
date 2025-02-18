@@ -6,10 +6,14 @@ pip install -r requirements
 
 ## Start Setta
 
+Run this in your terminal:
+
 ```
 setta
 ```
 
-## Use Setta
+Then in your browser go to http://127.0.0.1:8000/.
 
-In your browser, go to http://127.0.0.1:8000/.
+You should see something like this:
+
+<img width="1512" alt="Screenshot 2025-02-18 at 8 37 23 AM" src="https://github.com/user-attachments/assets/e752e178-39d9-475f-a587-5fbaff169e79" />
