@@ -2,8 +2,8 @@ wrapper.StreamDiffusionWrapper
 ---
 
 ---
-model_id_or_path: 
-t_index_list: 
+model_id_or_path: "SG161222/Realistic_Vision_V2.0"
+t_index_list: [22, 32, 45]
 lora_dict: 
 mode: 
 output_type: 
@@ -15,7 +15,7 @@ frame_buffer_size:
 width: 
 height: 
 warmup: 
-acceleration: 
+acceleration: "xformers"
 do_add_noise: 
 device_ids: 
 use_lcm_lora: 
