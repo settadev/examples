@@ -36,7 +36,7 @@ def drawing_to_img(project):
     output = pil_to_base64(output_image)
     return [
         {
-            "name": "output" + "_" + $stream$version + "_" + $stream_prepared$version,
+            "name": "output_" + $stream_prepared$version,
             "type": "img",
             "value": output,
         }
