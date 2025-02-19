@@ -2,7 +2,7 @@ wrapper.StreamDiffusionWrapper
 ---
 
 ---
-model_id_or_path: "SG161222/Realistic_Vision_V2.0"
+model_id_or_path: "stabilityai/sd-turbo"
 t_index_list: [22, 32, 45]
 lora_dict: 
 mode: 
