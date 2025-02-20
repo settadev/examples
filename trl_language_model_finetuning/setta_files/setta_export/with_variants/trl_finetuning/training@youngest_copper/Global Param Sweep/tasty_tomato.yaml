@@ -1,0 +1,10 @@
+training:
+  trainer:
+  config:
+    '@baseline':
+    '@weight_decay':
+    '@cosine':
+  Global Param Sweep:
+scripts:
+  training_script:
+  callback_fns:

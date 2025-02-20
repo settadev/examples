@@ -3,7 +3,7 @@ trl.SFTTrainer
 
 ---
 model: "facebook/opt-350m"
-args: config
+args: training["config"]
 data_collator: 
 train_dataset: dataset
 eval_dataset: 
