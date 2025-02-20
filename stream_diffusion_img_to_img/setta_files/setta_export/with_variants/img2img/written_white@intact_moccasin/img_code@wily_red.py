@@ -26,17 +26,17 @@ def pil_to_base64(pil_image: Image.Image, format="PNG") -> str:
 def drawing_to_img(project):
     x = base64_to_pil(project["input_image"]["drawing"])
 
-    image_tensor = stream.preprocess_image(x)
+    image_tensor = corporate_jade["stream"].preprocess_image(x)
 
-    for _ in range(stream.batch_size - 1):
-        stream(image=image_tensor)
+    for _ in range(corporate_jade["stream"].batch_size - 1):
+        corporate_jade["stream"](image=image_tensor)
 
-    output_image = stream(image=image_tensor)
+    output_image = corporate_jade["stream"](image=image_tensor)
 
     output = pil_to_base64(output_image)
     return [
         {
-            "name": "output_" + $stream_prepared$version,
+            "name": "output_" + $corporate_jade["stream_prepared"]$version,
             "type": "img",
             "value": output,
         }
