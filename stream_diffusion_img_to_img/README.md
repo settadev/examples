@@ -21,7 +21,7 @@ Then in your browser go to http://127.0.0.1:8000/.
 
 You should see something like this:
 
-<img width="1512" alt="Screenshot 2025-02-18 at 8 34 36 AM" src="https://github.com/user-attachments/assets/da15e2a2-0a7f-4a0c-a0ab-4fce05147dfa" />
+<img width="1512" alt="Screenshot 2025-02-20 at 3 36 49 PM" src="https://github.com/user-attachments/assets/708dc2b2-8f58-41f9-bd9c-21ab551cc59a" />
 
 
 
