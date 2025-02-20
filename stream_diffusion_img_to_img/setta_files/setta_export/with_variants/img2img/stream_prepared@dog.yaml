@@ -2,7 +2,7 @@ stream.prepare
 ---
 
 ---
-prompt: f"dog {action}"
+prompt: "dog playing the guitar, impressionist painting"
 negative_prompt: "low quality, blurry"
 num_inference_steps: 
 guidance_scale: 
