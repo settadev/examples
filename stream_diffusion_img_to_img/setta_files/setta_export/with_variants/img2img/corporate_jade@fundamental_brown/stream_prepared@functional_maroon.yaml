@@ -2,7 +2,7 @@ corporate_jade["stream"].prepare
 ---
 
 ---
-prompt: "octopus playing the guitar, impressionist painting"
+prompt: "lizard playing the guitar, impressionist painting"
 negative_prompt: "low quality, blurry"
 num_inference_steps: 
 guidance_scale: 
