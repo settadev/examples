@@ -20,4 +20,4 @@ Then in your browser go to http://127.0.0.1:8000/.
 
 You should see something like this:
 
-<img width="1512" alt="Screenshot 2025-02-20 at 1 04 14 PM" src="https://github.com/user-attachments/assets/948ceae3-8196-44f1-911a-7c5464726e26" />
+<img width="1512" alt="Screenshot 2025-02-21 at 11 49 34 AM" src="https://github.com/user-attachments/assets/96775341-4b6d-4d3c-8bc2-743eafce458a" />
