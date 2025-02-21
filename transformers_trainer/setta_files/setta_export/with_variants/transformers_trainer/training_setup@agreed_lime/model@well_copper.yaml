@@ -3,4 +3,4 @@ transformers.AutoModelForSequenceClassification.from_pretrained
 
 ---
 pretrained_model_name_or_path: model_name
-num_labels: 5
+num_labels: dataset_setup["dataset"]['train'].features['label'].num_classes
