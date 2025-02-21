@@ -30,3 +30,5 @@ And go to http://127.0.0.1:8000/ in your browser.
 | --- | --- |
 | [Stream Diffusion Image to Image](https://github.com/settadev/examples/tree/main/stream_diffusion_img_to_img) | A real-time drawing interface that creates multiple AI-enhanced images as you sketch in parallel.
 | [TRL Language Model Finetuning](https://github.com/settadev/examples/tree/main/trl_language_model_finetuning) | Trying out different training configurations, using the Hugging Face Transformer Reinforcement Learning (TRL) library.
+| [Transformers Sequence Classification](https://github.com/settadev/examples/tree/main/transformers_trainer) | Train text classification models using the Hugging Face Transformers library.
+| [PyTorch Metric Learning](https://github.com/settadev/examples/tree/main/pytorch_metric_learning_trainer) | Finetune embedding models using different metric learning algorithms.
