@@ -2,8 +2,8 @@ pytorch_metric_learning.datasets.CUB
 ---
 
 ---
-root: "."
+root: "CUB200"
 split: "train"
 transform: torchvision.transforms.Compose(train_transforms)
 target_transform: 
-download: 
+download: True
