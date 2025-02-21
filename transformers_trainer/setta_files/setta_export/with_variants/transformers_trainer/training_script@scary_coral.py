@@ -13,7 +13,10 @@ def get_compute_metrics(metric):
         return metric.compute(predictions=predictions, references=labels)
     return compute_metrics
 
-loss_callback = LossCallback($training_setup["training_args"]$version)
+training_args_version = $training_setup["training_args"]$version
+dataset_version = $dataset_setup["dataset"]$version
+callback_name = f"{training_args_version}_{dataset_version}"
+loss_callback = LossCallback(callback_name)
 
 $SETTA_GENERATED_PYTHON
 
