@@ -3,9 +3,9 @@ pytorch_metric_learning.trainers.MetricLossOnly
 
 ---
 models: models
-optimizers: 
-batch_size: 
-loss_funcs: 
+optimizers: optimizers
+batch_size: 32
+loss_funcs: losses
 dataset: 
 mining_funcs: 
 iterations_per_epoch: 

@@ -1,0 +1,15 @@
+torch.optim.Adam
+---
+
+---
+params: models["embedder"].parameters()
+lr: 
+betas: 
+eps: 
+weight_decay: 
+amsgrad: 
+foreach: 
+maximize: 
+capturable: 
+differentiable: 
+fused: 

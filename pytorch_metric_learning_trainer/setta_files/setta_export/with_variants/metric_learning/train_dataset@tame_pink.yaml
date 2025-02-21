@@ -1,0 +1,9 @@
+pytorch_metric_learning.datasets.CUB
+---
+
+---
+root: "."
+split: "train"
+transform: 
+target_transform: 
+download: 
