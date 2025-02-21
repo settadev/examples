@@ -1,5 +1,5 @@
 transformers[torch]==4.49.0
 datasets==3.3.2
 evaluate==0.4.3
-setta==0.0.5.dev0
+setta==0.0.5.dev4
 scikit-learn==1.6.1
