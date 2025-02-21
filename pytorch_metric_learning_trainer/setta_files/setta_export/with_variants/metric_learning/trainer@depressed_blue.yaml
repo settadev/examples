@@ -6,7 +6,7 @@ models: models
 optimizers: optimizers
 batch_size: 32
 loss_funcs: losses
-dataset: 
+dataset: train_dataset
 mining_funcs: 
 iterations_per_epoch: 
 data_device: 
