@@ -2,7 +2,6 @@ transformers.TrainingArguments
 ---
 output_dir: "/tmp"
 logging_steps: 10
-deepspeed: deepspeed_config
 
 ---
 overwrite_output_dir: 
@@ -82,6 +81,7 @@ fsdp_min_num_params:
 fsdp_config: 
 fsdp_transformer_layer_cls_to_wrap: 
 accelerator_config: 
+deepspeed: 
 label_smoothing_factor: 
 optim: 
 optim_args: 
