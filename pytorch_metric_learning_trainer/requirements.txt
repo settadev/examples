@@ -1,2 +1,3 @@
 pytorch-metric-learning==2.8.1
+torchvision==0.21.0
 setta==0.0.5.dev0

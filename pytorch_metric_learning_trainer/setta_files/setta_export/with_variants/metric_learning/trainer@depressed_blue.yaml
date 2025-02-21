@@ -2,7 +2,7 @@ pytorch_metric_learning.trainers.MetricLossOnly
 ---
 
 ---
-models: 
+models: models
 optimizers: 
 batch_size: 
 loss_funcs: 
