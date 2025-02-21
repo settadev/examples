@@ -1,0 +1,9 @@
+torchvision.transforms.RandomRotation
+---
+
+---
+degrees: 15
+interpolation: 
+expand: 
+center: 
+fill: 

@@ -1,0 +1,10 @@
+pytorch_metric_learning.utils.logging_presets.get_record_keeper
+---
+
+---
+csv_folder: "example_logs"
+tensorboard_folder: "example_tensorboard"
+global_db_path: 
+experiment_name: 
+is_new_experiment: 
+save_lists: 

@@ -1,0 +1,7 @@
+pytorch_metric_learning.miners.TripletMarginMiner
+---
+
+---
+margin: 
+type_of_triplets: "all"
+kwargs: 

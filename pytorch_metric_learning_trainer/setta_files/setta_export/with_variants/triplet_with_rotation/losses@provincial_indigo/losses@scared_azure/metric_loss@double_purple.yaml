@@ -1,0 +1,9 @@
+pytorch_metric_learning.losses.TripletMarginLoss
+---
+
+---
+margin: 0.01
+swap: 
+smooth_loss: True
+triplets_per_anchor: 
+kwargs: 

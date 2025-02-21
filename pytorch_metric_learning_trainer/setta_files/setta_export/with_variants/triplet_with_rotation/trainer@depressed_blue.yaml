@@ -1,0 +1,27 @@
+pytorch_metric_learning.trainers.MetricLossOnly
+---
+
+---
+models: models["models"]
+optimizers: models["optimizers"]
+batch_size: batch_size
+loss_funcs: losses["losses"]
+dataset: datasets["train_dataset"]
+mining_funcs: losses["miners"]
+iterations_per_epoch: 
+data_device: 
+dtype: 
+loss_weights: 
+sampler: datasets["sampler"]
+collate_fn: 
+lr_schedulers: 
+gradient_clippers: 
+freeze_these: 
+freeze_trunk_batchnorm: 
+label_hierarchy_level: 
+dataloader_num_workers: 
+data_and_label_getter: 
+dataset_labels: 
+set_min_label_to_zero: 
+end_of_iteration_hook: logging["hooks"].end_of_iteration_hook
+end_of_epoch_hook: logging["end_of_epoch_hook"]

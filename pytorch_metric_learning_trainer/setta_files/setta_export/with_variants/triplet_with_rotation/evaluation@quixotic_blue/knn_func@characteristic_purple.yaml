@@ -1,0 +1,6 @@
+pytorch_metric_learning.utils.inference.CustomKNN
+---
+
+---
+distance: evaluation["knn_distance"]
+batch_size: 

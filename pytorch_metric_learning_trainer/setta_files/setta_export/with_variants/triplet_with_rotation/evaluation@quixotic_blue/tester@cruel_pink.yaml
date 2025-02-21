@@ -1,0 +1,19 @@
+pytorch_metric_learning.testers.GlobalEmbeddingSpaceTester
+---
+
+---
+normalize_embeddings: 
+use_trunk_output: 
+batch_size: 
+dataloader_num_workers: 
+pca: 
+data_device: 
+dtype: 
+data_and_label_getter: 
+label_hierarchy_level: 
+end_of_testing_hook: 
+dataset_labels: 
+set_min_label_to_zero: 
+accuracy_calculator: evaluation["accuracy_calculator"]
+visualizer: 
+visualizer_hook: 

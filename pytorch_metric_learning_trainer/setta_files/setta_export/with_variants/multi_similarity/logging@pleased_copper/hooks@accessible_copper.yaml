@@ -1,0 +1,6 @@
+pytorch_metric_learning.utils.logging_presets.get_hook_container
+---
+
+---
+record_keeper: logging["record_keeper"][0]
+primary_metric: "precision_at_1"

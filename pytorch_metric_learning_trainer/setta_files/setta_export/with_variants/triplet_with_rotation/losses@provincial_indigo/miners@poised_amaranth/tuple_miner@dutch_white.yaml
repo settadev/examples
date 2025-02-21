@@ -1,0 +1,7 @@
+pytorch_metric_learning.miners.PairMarginMiner
+---
+
+---
+pos_margin: 0.3
+neg_margin: 0.7
+kwargs: 
