@@ -1,6 +1,8 @@
 # Stream Diffusion Image to Image
 
-In this example, an AI diffusion model will generate an image based on your drawing, in near real-time speed.
+In this example, an AI diffusion model will generate an image based on your drawing, in near real-time speed using the [Stream Diffusion](https://github.com/cumulo-autumn/StreamDiffusion) library.
+
+Watch [this video](https://www.youtube.com/watch?v=KE6FZxbGVkw) for an overview.
 
 ## Install packages
 

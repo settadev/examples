@@ -1,11 +1,13 @@
 # TRL Language Model Finetuning
 
-This is a basic example of how you can configure language model training runs, using the Hugging Face TRL library. Watch [this video](https://www.youtube.com/watch?v=hVH3IPoNngo) for an overview.
+This is a basic example of how you can configure language model training runs, using the Hugging Face TRL library. 
+
+Watch [this video](https://www.youtube.com/watch?v=hVH3IPoNngo) for an overview.
 
 ## Install packages
 
 ```python
-pip install -r requirements
+pip install -r requirements.txt
 ```
 
 ## Start Setta
