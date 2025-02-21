@@ -1,4 +1,3 @@
-training_script:
 datasets:
   train_dataset:
   eval_dataset:
