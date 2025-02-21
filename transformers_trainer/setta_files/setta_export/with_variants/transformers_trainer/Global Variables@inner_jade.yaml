@@ -1,0 +1,4 @@
+model_name: "google-bert/bert-base-cased"
+seed: 42
+train_size: 1000
+test_size: 500

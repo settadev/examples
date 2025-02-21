@@ -1,0 +1,9 @@
+dataset_setup["tokenized_dataset"]["train"].shuffle(seed=seed).select
+---
+
+---
+indices: range(train_size)
+keep_in_memory: 
+indices_cache_file_name: 
+writer_batch_size: 
+new_fingerprint: 
