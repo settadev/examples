@@ -1,0 +1,7 @@
+pytorch_metric_learning.losses.ContrastiveLoss
+---
+
+---
+pos_margin: 
+neg_margin: 
+kwargs: 

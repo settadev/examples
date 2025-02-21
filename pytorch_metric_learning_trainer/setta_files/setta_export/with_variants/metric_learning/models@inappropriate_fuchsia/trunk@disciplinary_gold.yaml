@@ -1,0 +1,7 @@
+torchvision.models.resnet18
+---
+
+---
+weights: torchvision.models.ResNet18_Weights.DEFAULT
+progress: 
+kwargs: 
