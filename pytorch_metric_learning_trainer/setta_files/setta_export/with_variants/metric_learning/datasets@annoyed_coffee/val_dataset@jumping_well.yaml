@@ -1,0 +1,9 @@
+pytorch_metric_learning.datasets.CUB
+---
+
+---
+root: "CUB200"
+split: "test"
+transform: torchvision.transforms.Compose(image_transforms["train_transforms"])
+target_transform: 
+download: True

@@ -1,0 +1,13 @@
+pytorch_metric_learning.utils.accuracy_calculator.AccuracyCalculator
+---
+
+---
+include: ("precision_at_1",)
+exclude: 
+avg_of_avgs: 
+return_per_class: 
+k: 
+label_comparison_fn: 
+device: 
+knn_func: evaluation["knn_func"]
+kmeans_func: 

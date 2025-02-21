@@ -2,7 +2,7 @@ torch.optim.Adam
 ---
 
 ---
-params: models["trunk"].parameters()
+params: models["models"]["trunk"].parameters()
 lr: 
 betas: 
 eps: 
