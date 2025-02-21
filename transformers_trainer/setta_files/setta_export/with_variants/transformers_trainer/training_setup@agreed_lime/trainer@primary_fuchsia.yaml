@@ -11,7 +11,7 @@ processing_class:
 model_init: 
 compute_loss_func: 
 compute_metrics: training_setup["compute_metrics"]
-callbacks: 
+callbacks: [loss_callback]
 optimizers: 
 optimizer_cls_and_kwargs: 
 preprocess_logits_for_metrics: 

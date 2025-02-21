@@ -1,4 +1,5 @@
 import numpy as np
+from callbacks import LossCallback
 
 def get_tokenize_function(tokenizer, **kwargs):
     def tokenize_function(examples):
@@ -11,6 +12,8 @@ def get_compute_metrics(metric):
         predictions = np.argmax(logits, axis=-1)
         return metric.compute(predictions=predictions, references=labels)
     return compute_metrics
+
+loss_callback = LossCallback($training_setup["training_args"]$version)
 
 $SETTA_GENERATED_PYTHON
 
