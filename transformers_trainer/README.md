@@ -22,11 +22,16 @@ Then in your browser go to http://127.0.0.1:8000/.
 
 The default project is a simplified UI and should look like this:
 
-<img width="1512" alt="Screenshot 2025-02-21 at 1 16 14 AM" src="https://github.com/user-attachments/assets/df2dbd30-d82b-49d7-a808-24ea3ad9c065" />
+<img width="1512" alt="Screenshot 2025-02-21 at 6 28 27 PM" src="https://github.com/user-attachments/assets/1f6554f8-8d49-4ba8-af48-f5dc6bc5d845" />
+
 
 As you can see, much of the configuration is hidden from view in the minimized sections. 
 
 If you'd prefer to see all those details, you can go to the left-side projects pane, and click on `transformers_trainer_dev`.   
+
+<img width="420" alt="Screenshot 2025-02-21 at 6 21 13 PM" src="https://github.com/user-attachments/assets/bbc48fa5-c572-477d-a3a2-d0aa825eb7e5" />
+
+This will load the "developer's UI", which is just what we're calling the non-simplified UI.
 
 ## The Developer's UI
 
