@@ -1,0 +1,3 @@
+transformers==4.49.0
+datasets==3.3.2
+setta==0.0.5.dev0
