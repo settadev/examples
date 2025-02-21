@@ -1,0 +1,22 @@
+other_stuff:
+  training_script:
+  Global Param Sweep:
+datasets:
+  train_dataset:
+  eval_dataset:
+dataset_setup:
+  dataset:
+    '@yelp':
+    '@ag':
+  tokenizer:
+  tokenize_function:
+  tokenized_dataset:
+Global Variables:
+training_setup:
+  trainer:
+  training_args:
+    '@low_lr':
+    '@high_lr':
+  model:
+  metric:
+  compute_metrics:
