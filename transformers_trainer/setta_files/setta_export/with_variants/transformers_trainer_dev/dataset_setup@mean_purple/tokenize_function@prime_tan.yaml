@@ -1,0 +1,7 @@
+get_tokenize_function
+---
+
+---
+tokenizer: dataset_setup["tokenizer"]
+padding: "max_length"
+truncation: True

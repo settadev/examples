@@ -1,0 +1,17 @@
+transformers.Trainer
+---
+
+---
+model: training_setup["model"]
+args: training_setup["training_args"]
+data_collator: 
+train_dataset: datasets["train_dataset"]
+eval_dataset: datasets["eval_dataset"]
+processing_class: 
+model_init: 
+compute_loss_func: 
+compute_metrics: training_setup["compute_metrics"]
+callbacks: [loss_callback]
+optimizers: 
+optimizer_cls_and_kwargs: 
+preprocess_logits_for_metrics: 

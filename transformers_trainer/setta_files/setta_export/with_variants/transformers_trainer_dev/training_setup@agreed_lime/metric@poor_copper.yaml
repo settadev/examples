@@ -1,0 +1,16 @@
+evaluate.load
+---
+
+---
+path: "accuracy"
+config_name: 
+module_type: 
+process_id: 
+num_process: 
+cache_dir: 
+experiment_id: 
+keep_in_memory: 
+download_config: 
+download_mode: 
+revision: 
+init_kwargs: 
