@@ -2,7 +2,13 @@
 
 This is a basic example of how you can configure language model training runs, using the Hugging Face TRL library. 
 
-Watch [this video](https://www.youtube.com/watch?v=hVH3IPoNngo) for an overview.
+Watch this video for an overview:
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=hVH3IPoNngo">
+    <img src="https://img.youtube.com/vi/hVH3IPoNngo/maxresdefault.jpg" alt="Fine-tune LLM's the easy way using Hugging Face + Setta (Overview)" width="50%">
+  </a>
+</p>
 
 ## Install packages
 
