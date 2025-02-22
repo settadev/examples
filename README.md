@@ -26,9 +26,9 @@ And go to http://127.0.0.1:8000/ in your browser.
 
 ## List of Examples
 
-| Example name | Description |
-| --- | --- |
-| [Stream Diffusion Image to Image](https://github.com/settadev/examples/tree/main/stream_diffusion_img_to_img) | A real-time drawing interface that creates multiple AI-enhanced images as you sketch in parallel.
-| [TRL Language Model Finetuning](https://github.com/settadev/examples/tree/main/trl_language_model_finetuning) | Trying out different training configurations, using the Hugging Face Transformer Reinforcement Learning (TRL) library.
-| [Transformers Sequence Classification](https://github.com/settadev/examples/tree/main/transformers_trainer) | Train text classification models using the Hugging Face Transformers library.
-| [PyTorch Metric Learning](https://github.com/settadev/examples/tree/main/pytorch_metric_learning_trainer) | Finetune embedding models using different metric learning algorithms.
+| Example name | Description | Preview
+| --- | --- | --- |
+| [Stream Diffusion Image to Image](https://github.com/settadev/examples/tree/main/stream_diffusion_img_to_img) | A real-time drawing interface that creates multiple AI-enhanced images as you sketch in parallel. | ![](https://github.com/user-attachments/assets/2a063779-ed61-4103-90a5-bf127f3ea012)
+| [TRL Language Model Finetuning](https://github.com/settadev/examples/tree/main/trl_language_model_finetuning) | Trying out different training configurations, using the Hugging Face Transformer Reinforcement Learning (TRL) library. | ![](https://github.com/user-attachments/assets/96775341-4b6d-4d3c-8bc2-743eafce458a)
+| [Transformers Sequence Classification](https://github.com/settadev/examples/tree/main/transformers_trainer) | Train text classification models using the Hugging Face Transformers library. | ![](https://github.com/user-attachments/assets/1f6554f8-8d49-4ba8-af48-f5dc6bc5d845)
+| [PyTorch Metric Learning](https://github.com/settadev/examples/tree/main/pytorch_metric_learning_trainer) | Finetune embedding models using different metric learning algorithms. | ![](https://github.com/user-attachments/assets/c06a80f5-3499-459c-bee8-71f0df52b4b0)
