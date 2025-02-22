@@ -29,7 +29,7 @@ Then in your browser go to http://127.0.0.1:8000/.
 
 You should see something like this:
 
-<img width="1512" alt="Screenshot 2025-02-21 at 11 51 02 AM" src="https://github.com/user-attachments/assets/2a063779-ed61-4103-90a5-bf127f3ea012" />
+<img width="1512" src="https://github.com/user-attachments/assets/2a063779-ed61-4103-90a5-bf127f3ea012" />
 
 
 
