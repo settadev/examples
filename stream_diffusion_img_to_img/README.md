@@ -5,7 +5,7 @@ In this example, an AI diffusion model will generate an image based on your draw
 Watch this YouTube video for an overview:
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=KE6FZxbGVkw">
+  <a href="https://www.youtube.com/watch?v=KE6FZxbGVkw" target="_blank">
     <img src="https://img.youtube.com/vi/KE6FZxbGVkw/maxresdefault.jpg" alt="Stream Diffusion GUI! Setta Makes It Easy!" width="50%">
   </a>
 </p>
