@@ -2,7 +2,13 @@
 
 In this example, an AI diffusion model will generate an image based on your drawing, in near real-time speed using the [Stream Diffusion](https://github.com/cumulo-autumn/StreamDiffusion) library.
 
-Watch [this video](https://www.youtube.com/watch?v=KE6FZxbGVkw) for an overview.
+Watch this YouTube video for an overview:
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=KE6FZxbGVkw">
+    <img src="https://img.youtube.com/vi/KE6FZxbGVkw/maxresdefault.jpg" alt="Stream Diffusion GUI! Setta Makes It Easy!" width="50%">
+  </a>
+</p>
 
 ## Install packages
 
