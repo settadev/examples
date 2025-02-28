@@ -1,5 +1,5 @@
 pytorch-metric-learning==2.8.1
 record-keeper==0.9.32
 torchvision==0.21.0
-setta==0.0.9.dev2
+setta==0.0.9
 tensorboard==2.19.0
