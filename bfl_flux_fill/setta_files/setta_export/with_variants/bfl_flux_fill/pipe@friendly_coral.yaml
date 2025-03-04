@@ -1,0 +1,7 @@
+diffusers.FluxFillPipeline.from_pretrained
+---
+
+---
+pretrained_model_name_or_path: "black-forest-labs/FLUX.1-Fill-dev"
+torch_dtype: torch.bfloat16
+token: token
