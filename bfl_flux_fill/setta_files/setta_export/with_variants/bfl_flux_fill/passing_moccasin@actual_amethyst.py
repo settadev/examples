@@ -7,6 +7,7 @@ $SETTA_GENERATED_PYTHON
 
 pipe = pipe.to("cuda")
 
+
 def convert_transparent_to_black(base64_image):
     image_data = base64.b64decode(base64_image)
 
@@ -32,6 +33,7 @@ def _fn(p):
     image = layers[0]
     mask = layers[1]
     mask = convert_transparent_to_black(mask)
+    output = pipe(**pipe_args, image=image, mask=mask).images[0]
 
 
 fn = SettaInMemoryFn(fn=_fn)

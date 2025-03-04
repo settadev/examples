@@ -1,0 +1,7 @@
+prompt: "a white paper cup"
+height: 1632
+width: 1232
+guidance_scale: 30
+num_inference_steps: 50
+max_sequence_length: 512
+generator: torch.Generator("cpu").manual_seed(0)
