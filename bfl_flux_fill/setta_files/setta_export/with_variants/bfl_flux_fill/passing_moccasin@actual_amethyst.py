@@ -18,7 +18,7 @@ def inpaint_fn(p):
     width, height = image.size
     mask = layers[1]
     mask = convert_transparent_to_black(mask)
-    output = inpainter["model"](
+    image = inpainter["model"](
         **inpainter["args"],
         prompt=p["prompt"]["text"],
         image=image,
@@ -26,8 +26,16 @@ def inpaint_fn(p):
         width=width,
         height=height,
     ).images[0]
-    output = pil_to_base64(output)
-    return [{"name": "inpainted", "type": "img", "value": output}]
+    output_path = "output_imgs/inpainted.png"
+    image.save(output_path)
+    return [
+        {
+            "name": "inpainted",
+            "type": "img",
+            "path": output_path,
+            "value": pil_to_base64(image),
+        }
+    ]
 
 
 prev_inpainted_image = None
@@ -42,11 +50,19 @@ def redux_fn(p):
     image = base64_to_pil(image)
     width, height = image.size
     adapter_output = redux["adapter"](image)
-    images = redux["model"](
+    image = redux["model"](
         **redux["args"], **adapter_output, width=width, height=height
-    ).images
-    output = pil_to_base64(images[0])
-    return [{"name": "variation", "type": "img", "value": output}]
+    ).images[0]
+    output_path = "output_imgs/variation.png"
+    image.save(output_path)
+    return [
+        {
+            "name": "variation",
+            "type": "img",
+            "path": output_path,
+            "value": pil_to_base64(image),
+        }
+    ]
 
 
 fn = SettaInMemoryFn(fn=inpaint_fn, dependencies=[])
