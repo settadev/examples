@@ -40,8 +40,11 @@ def redux_fn(p):
         return
     prev_inpainted_image = image
     image = base64_to_pil(image)
+    width, height = image.size
     adapter_output = redux["adapter"](image)
-    images = redux["model"](**redux["args"], **adapter_output).images
+    images = redux["model"](
+        **redux["args"], **adapter_output, width=width, height=height
+    ).images
     output = pil_to_base64(images[0])
     return [{"name": "variation", "type": "img", "value": output}]
 
