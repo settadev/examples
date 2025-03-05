@@ -49,7 +49,7 @@ def redux_fn(p):
     prev_inpainted_image = image
     image = base64_to_pil(image)
     width, height = image.size
-    adapter_output = redux["adapter"](image)
+    adapter_output = redux["adapter"](image, prompt=p["redux_prompt"]["text"])
     image = redux["model"](
         **redux["args"], **adapter_output, width=width, height=height
     ).images[0]

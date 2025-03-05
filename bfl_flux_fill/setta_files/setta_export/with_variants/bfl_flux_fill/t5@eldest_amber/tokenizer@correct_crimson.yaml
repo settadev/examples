@@ -1,0 +1,11 @@
+transformers.T5TokenizerFast.from_pretrained
+---
+
+---
+pretrained_model_name_or_path: "google/t5-v1_1-xxl"
+cache_dir: 
+force_download: 
+local_files_only: 
+token: 
+revision: 
+trust_remote_code: 

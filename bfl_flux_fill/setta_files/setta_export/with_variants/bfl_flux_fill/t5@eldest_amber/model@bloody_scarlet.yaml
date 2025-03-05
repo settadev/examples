@@ -1,0 +1,16 @@
+transformers.T5EncoderModel.from_pretrained
+---
+
+---
+pretrained_model_name_or_path: "google/t5-v1_1-xxl"
+config: 
+cache_dir: 
+ignore_mismatched_sizes: 
+force_download: 
+local_files_only: 
+token: 
+revision: 
+use_safetensors: 
+weights_only: 
+torch_dtype: torch.bfloat16
+quantization_config: quantization_config

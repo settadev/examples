@@ -1,0 +1,15 @@
+transformers.BitsAndBytesConfig
+---
+
+---
+load_in_8bit: 
+load_in_4bit: True
+llm_int8_threshold: 
+llm_int8_skip_modules: 
+llm_int8_enable_fp32_cpu_offload: 
+llm_int8_has_fp16_weight: 
+bnb_4bit_compute_dtype: 
+bnb_4bit_quant_type: 
+bnb_4bit_use_double_quant: 
+bnb_4bit_quant_storage: 
+kwargs: 
