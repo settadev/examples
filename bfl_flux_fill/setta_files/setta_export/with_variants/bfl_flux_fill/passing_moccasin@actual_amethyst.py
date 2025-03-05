@@ -7,24 +7,24 @@ from $base64_utils$import_path import (
 
 $SETTA_GENERATED_PYTHON
 
-pipe = pipe.to("cuda")
+inpainter = inpainter.to("cuda")
 
 
-def _fn(p):
+def inpaint_fn(p):
     layers = p["input"]["layers"]
     image = base64_to_pil(layers[0])
     width, height = image.size
     mask = layers[1]
     mask = convert_transparent_to_black(mask)
-    output = pipe(
-        **pipe_args,
+    output = inpainter(
+        **inpainter_args,
         image=image,
         mask_image=mask,
         width=width,
         height=height,
     ).images[0]
     output = pil_to_base64(output)
-    return [{"name": "output", "type": "img", "value": output}]
+    return [{"name": "inpainted", "type": "img", "value": output}]
 
 
-fn = SettaInMemoryFn(fn=_fn, dependencies=[])
+fn = SettaInMemoryFn(fn=inpaint_fn, dependencies=[])
