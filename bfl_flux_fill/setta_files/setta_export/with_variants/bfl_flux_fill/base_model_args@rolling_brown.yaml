@@ -1,3 +1,0 @@
-guidance_scale: 2.5
-num_inference_steps: 50
-generator: torch.Generator("cpu").manual_seed(0)

@@ -7,9 +7,9 @@ from $base64_utils$import_path import (
 
 $SETTA_GENERATED_PYTHON
 
-inpainter = inpainter.to("cuda")
-adapter = adapter.to("cuda")
-base_model = base_model.to("cuda")
+inpainter["model"] = inpainter["model"].to("cuda")
+redux["adapter"] = redux["adapter"].to("cuda")
+redux["model"] = redux["model"].to("cuda")
 
 
 def inpaint_fn(p):
@@ -18,8 +18,8 @@ def inpaint_fn(p):
     width, height = image.size
     mask = layers[1]
     mask = convert_transparent_to_black(mask)
-    output = inpainter(
-        **inpainter_args,
+    output = inpainter["model"](
+        **inpainter["args"],
         prompt=p["prompt"]["text"],
         image=image,
         mask_image=mask,
@@ -40,8 +40,8 @@ def redux_fn(p):
         return
     prev_inpainted_image = image
     image = base64_to_pil(image)
-    adapter_output = adapter(image)
-    images = base_model(**base_model_args, **adapter_output).images
+    adapter_output = redux["adapter"](image)
+    images = redux["model"](**redux["args"], **adapter_output).images
     output = pil_to_base64(images[0])
     return [{"name": "variation", "type": "img", "value": output}]
 
