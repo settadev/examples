@@ -2,8 +2,8 @@ transformers.BitsAndBytesConfig
 ---
 
 ---
-load_in_8bit: 
-load_in_4bit: True
+load_in_8bit: True
+load_in_4bit: 
 llm_int8_threshold: 
 llm_int8_skip_modules: 
 llm_int8_enable_fp32_cpu_offload: 

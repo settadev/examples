@@ -13,4 +13,3 @@ revision:
 use_safetensors: 
 weights_only: 
 torch_dtype: torch.bfloat16
-quantization_config: quantization_config
