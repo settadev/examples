@@ -13,13 +13,14 @@ base_model = base_model.to("cuda")
 
 
 def inpaint_fn(p):
-    layers = p["input"]["layers"]
+    layers = p["input"]["drawing"][1:]
     image = base64_to_pil(layers[0])
     width, height = image.size
     mask = layers[1]
     mask = convert_transparent_to_black(mask)
     output = inpainter(
         **inpainter_args,
+        prompt=p["prompt"]["text"],
         image=image,
         mask_image=mask,
         width=width,
@@ -29,8 +30,15 @@ def inpaint_fn(p):
     return [{"name": "inpainted", "type": "img", "value": output}]
 
 
+prev_inpainted_image = None
+
+
 def redux_fn(p):
+    global prev_inpainted_image
     image = p["inpainted"]["image"]
+    if image == prev_inpainted_image:
+        return
+    prev_inpainted_image = image
     image = base64_to_pil(image)
     adapter_output = adapter(image)
     images = base_model(**base_model_args, **adapter_output).images
@@ -38,6 +46,5 @@ def redux_fn(p):
     return [{"name": "variation", "type": "img", "value": output}]
 
 
-
 fn = SettaInMemoryFn(fn=inpaint_fn, dependencies=[])
-fn2 = SettaInMemoryFn(fn=redux_fn, dependencies=[])
+fn2 = SettaInMemoryFn(fn=redux_fn, dependencies=["inpainted['image']"])

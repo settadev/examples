@@ -1,4 +1,3 @@
-prompt: "a white paper cup"
 guidance_scale: 30
 num_inference_steps: 50
 max_sequence_length: 512
