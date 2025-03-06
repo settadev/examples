@@ -17,7 +17,7 @@ def inpaint_or_outpaint(layers, prompt, output_name):
     global first_call
     if first_call:
         first_call = False
-        image = Image.open("input_imgs/bfl_example.png")
+        image = Image.open("input_imgs/bfl_example.jpg")
     else:
         layers = layers[1:]
         image = base64_to_pil(layers[0])
