@@ -5,10 +5,11 @@ from $base64_utils$import_path import (
     pil_to_base64,
 )
 from PIL import Image
+import torch
 
 $SETTA_GENERATED_PYTHON
 
-inpainter["model"] = inpainter["model"].to("cuda")
+model = model.to("cuda")
 
 first_call = True
 original_size = None
@@ -26,13 +27,15 @@ def inpaint_or_outpaint(layers, prompt, output_name):
         width, height = original_size
         mask = layers[1]
         mask = convert_transparent_to_black(mask)
-        image = inpainter["model"](
-            **inpainter["args"],
+        image = model(
+            **inference_args,
             prompt=prompt,
             image=image,
             mask_image=mask,
             width=width,
             height=height,
+            max_sequence_length=512,
+            generator=torch.Generator("cpu").manual_seed(0)
         ).images[0]
 
     output_path = f"output_imgs/{output_name}.png"
