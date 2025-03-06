@@ -8,29 +8,27 @@ from $base64_utils$import_path import (
 $SETTA_GENERATED_PYTHON
 
 inpainter["model"] = inpainter["model"].to("cuda")
-redux["adapter"] = redux["adapter"].to("cuda")
-redux["model"] = redux["model"].to("cuda")
 
 
-def inpaint_fn(p):
-    layers = p["input"]["drawing"][1:]
+def inpaint_or_outpaint(layers, prompt, output_name):
+    layers = layers[1:]
     image = base64_to_pil(layers[0])
     width, height = image.size
     mask = layers[1]
     mask = convert_transparent_to_black(mask)
     image = inpainter["model"](
         **inpainter["args"],
-        prompt=p["prompt"]["text"],
+        prompt=prompt,
         image=image,
         mask_image=mask,
         width=width,
         height=height,
     ).images[0]
-    output_path = "output_imgs/inpainted.png"
+    output_path = f"output_imgs/{output_name}.png"
     image.save(output_path)
     return [
         {
-            "name": "inpainted",
+            "name": output_name,
             "type": "img",
             "path": output_path,
             "value": pil_to_base64(image),
@@ -38,32 +36,20 @@ def inpaint_fn(p):
     ]
 
 
-prev_inpainted_image = None
+prev = {"image": None, "mask": None}
 
 
-def redux_fn(p):
-    global prev_inpainted_image
-    image = p["inpainted"]["image"]
-    if image == prev_inpainted_image:
+def inpaint_fn(p):
+    drawing = p["input"]["drawing"]
+    return inpaint_or_outpaint(drawing, p["inpaint_prompt"]["text"], "inpainted")
+
+
+def outpaint_fn(p):
+    drawing = p["inpainted"]["drawing"]
+    if drawing[1] == prev["image"] and drawing[2] == prev["mask"]:
         return
-    prev_inpainted_image = image
-    image = base64_to_pil(image)
-    width, height = image.size
-    adapter_output = redux["adapter"](image)
-    image = redux["model"](
-        **redux["args"], **adapter_output, width=width, height=height
-    ).images[0]
-    output_path = "output_imgs/variation.png"
-    image.save(output_path)
-    return [
-        {
-            "name": "variation",
-            "type": "img",
-            "path": output_path,
-            "value": pil_to_base64(image),
-        }
-    ]
+    return inpaint_or_outpaint(drawing, p["outpaint_prompt"]["text"], "outpainted")
 
 
 fn = SettaInMemoryFn(fn=inpaint_fn, dependencies=[])
-fn2 = SettaInMemoryFn(fn=redux_fn, dependencies=["inpainted['image']"])
+fn2 = SettaInMemoryFn(fn=outpaint_fn, dependencies=["inpainted['drawing']"])
