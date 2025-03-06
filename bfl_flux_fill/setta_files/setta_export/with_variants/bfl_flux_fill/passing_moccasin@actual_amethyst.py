@@ -11,17 +11,19 @@ $SETTA_GENERATED_PYTHON
 inpainter["model"] = inpainter["model"].to("cuda")
 
 first_call = True
+original_size = None
 
 
 def inpaint_or_outpaint(layers, prompt, output_name):
-    global first_call
+    global first_call, original_size
     if first_call:
         first_call = False
         image = Image.open("input_imgs/bfl_example.jpg")
+        original_size = image.size
     else:
         layers = layers[1:]
         image = base64_to_pil(layers[0])
-        width, height = image.size
+        width, height = original_size
         mask = layers[1]
         mask = convert_transparent_to_black(mask)
         image = inpainter["model"](
