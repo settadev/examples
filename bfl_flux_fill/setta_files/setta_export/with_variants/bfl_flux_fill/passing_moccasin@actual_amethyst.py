@@ -52,7 +52,7 @@ def iterative_outpaint(layers, prompt, output_name):
     global first_call, original_size
     if first_call:
         first_call = False
-        image = Image.open("input_imgs/bfl_example.jpg")
+        image = Image.open("input_imgs/bfl_example_5.jpg")
         original_size = image.size
         return save_and_return_image(image, output_name)
     return inpaint_or_outpaint(layers, prompt, output_name)
@@ -78,7 +78,7 @@ def create_in_memory_fn(idx, do_iterative_outpaint=False):
     return SettaInMemoryFn(fn=fn, dependencies=[f"input_{idx}['drawing']"])
 
 
-fn1 = create_in_memory_fn(1)
-fn2 = create_in_memory_fn(2)
-fn3 = create_in_memory_fn(3)
+# fn1 = create_in_memory_fn(1)
+# fn2 = create_in_memory_fn(2)
+# fn3 = create_in_memory_fn(3)
 fn3 = create_in_memory_fn(4, True)
