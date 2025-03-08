@@ -1,8 +1,11 @@
 sapientml.SapientML
 ---
+target_columns: [target_column]
+n_models: 5
+hyperparameter_tuning: True
+hyperparameter_tuning_n_trials: 100
 
 ---
-target_columns: [target_column]
 task_type: 
 adaptation_metric: 
 split_method: 
@@ -13,4 +16,3 @@ time_split_num:
 time_split_index: 
 split_stratification: 
 model_type: 
-kwargs: 
