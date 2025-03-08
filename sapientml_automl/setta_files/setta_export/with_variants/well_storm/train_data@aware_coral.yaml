@@ -2,7 +2,7 @@ pd.read_csv
 ---
 
 ---
-filepath_or_buffer: csv_path
+filepath_or_buffer: train_path
 sep: 
 delimiter: 
 header: 

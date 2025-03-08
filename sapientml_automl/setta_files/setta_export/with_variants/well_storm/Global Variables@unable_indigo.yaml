@@ -1,2 +1,4 @@
-csv_path: "https://github.com/sapientml/sapientml/files/12481088/titanic.csv"
-target_column: "survived"
+root_url: "https://github.com/sapientml/sapientml/files/"
+train_path: f"{root_url}12617660/train_medical-insurance-prediction.csv"
+test_path: f"{root_url}12617696/test_medical-insurance-prediction.csv"
+target_column: "charges"
