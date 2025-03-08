@@ -2,7 +2,7 @@ sklearn.model_selection.train_test_split
 ---
 
 ---
-arrays: dataset
+arrays: [dataset]
 test_size: 
 train_size: 
 random_state: 
