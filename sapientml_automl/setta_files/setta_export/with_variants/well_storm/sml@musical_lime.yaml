@@ -1,0 +1,16 @@
+sapientml.SapientML
+---
+
+---
+target_columns: [target_column]
+task_type: 
+adaptation_metric: 
+split_method: 
+split_seed: 
+split_train_size: 
+split_column_name: 
+time_split_num: 
+time_split_index: 
+split_stratification: 
+model_type: 
+kwargs: 
