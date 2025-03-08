@@ -4,7 +4,7 @@ sklearn.model_selection.train_test_split
 ---
 arrays: [train_data]
 test_size: 
-train_size: 
+train_size: 0.05
 random_state: 
 shuffle: 
 stratify: 

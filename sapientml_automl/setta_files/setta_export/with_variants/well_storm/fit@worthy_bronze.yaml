@@ -2,7 +2,7 @@ sml.fit
 ---
 
 ---
-training_data: train_data
+training_data: train_data_split[0]
 validation_data: 
 test_data: 
 save_datasets_format: 
