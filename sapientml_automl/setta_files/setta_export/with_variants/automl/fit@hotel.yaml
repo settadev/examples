@@ -1,6 +1,7 @@
 sml.fit
 ---
 training_data: train_data_split[0]
+ignore_columns: ["No."]
 output_dir: f"outputs_{version}_{int(train_size*100)}"
 
 ---
@@ -9,5 +10,4 @@ test_data:
 save_datasets_format: 
 csv_encoding: 
 csv_delimiter: 
-ignore_columns: 
 codegen_only: 
