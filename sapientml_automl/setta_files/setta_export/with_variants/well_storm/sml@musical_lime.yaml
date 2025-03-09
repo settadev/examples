@@ -1,11 +1,11 @@
 sapientml.SapientML
 ---
-target_columns: [target_column]
 n_models: 5
 hyperparameter_tuning: true
 hyperparameter_tuning_n_trials: 100
 
 ---
+target_columns: [target_column]
 task_type: 
 adaptation_metric: 
 split_method: 
