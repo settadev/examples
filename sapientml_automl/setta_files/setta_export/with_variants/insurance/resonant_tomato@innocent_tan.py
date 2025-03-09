@@ -1,5 +1,4 @@
 import pandas as pd
-from sklearn.metrics import r2_score, f1_score
 
 def evaluate(sml, data, target_column, score_fn_info):
     y_true = data[target_column].reset_index(drop=True)
