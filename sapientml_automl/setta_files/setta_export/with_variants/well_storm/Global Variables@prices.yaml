@@ -1,0 +1,3 @@
+root_url: "https://github.com/sapientml/sapientml/files/"
+train_path: f"{root_url}12374429/housing-prices.csv"
+target_column: "SalePrice"
