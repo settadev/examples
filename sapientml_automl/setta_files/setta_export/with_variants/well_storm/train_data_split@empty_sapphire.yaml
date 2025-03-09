@@ -1,9 +1,9 @@
 sklearn.model_selection.train_test_split
 ---
-arrays: [train_data]
 train_size: 0.8
 
 ---
+arrays: [train_data]
 test_size: 
 random_state: 
 shuffle: 
