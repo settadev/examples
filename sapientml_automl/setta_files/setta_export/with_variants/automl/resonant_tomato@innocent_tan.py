@@ -9,6 +9,8 @@ def evaluate(data):
     pd.concat([y_pred, y_true], axis=1)
     print(f"R2 score: {r2_score(y_true, y_pred)}")
 
+version = ($Global Variables$version).split("@")[1]
+
 $SETTA_GENERATED_PYTHON
 
 evaluate(test_data)

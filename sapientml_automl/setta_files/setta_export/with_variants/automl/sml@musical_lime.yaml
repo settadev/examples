@@ -2,7 +2,7 @@ sapientml.SapientML
 ---
 n_models: 5
 hyperparameter_tuning: true
-hyperparameter_tuning_n_trials: 100
+hyperparameter_tuning_n_trials: 10
 
 ---
 target_columns: [target_column]
