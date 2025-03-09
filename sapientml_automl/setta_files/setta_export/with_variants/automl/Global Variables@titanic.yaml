@@ -1,3 +1,0 @@
-root_url: "https://github.com/sapientml/sapientml/files/"
-train_path: f"{root_url}12481088/titanic.csv"
-target_column: "survived"

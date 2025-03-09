@@ -1,7 +1,7 @@
 sml.fit
 ---
 training_data: train_data_split[0]
-output_dir: f"outputs_{version}"
+output_dir: f"outputs_{version}_{int(train_size*100)}"
 
 ---
 validation_data: 
