@@ -1,0 +1,2 @@
+fn: sklearn.metrics.f1_score
+pos_label: "C"

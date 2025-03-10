@@ -1,0 +1,4 @@
+root_url: "https://github.com/sapientml/sapientml/files/"
+train_path: f"{root_url}12617021/train_hotelcancel-prediction.csv"
+test_path: f"{root_url}12617033/test_hotelcancel-prediction.csv"
+target_column: "Status"
