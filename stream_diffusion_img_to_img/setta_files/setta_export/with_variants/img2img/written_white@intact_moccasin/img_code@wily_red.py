@@ -24,7 +24,7 @@ def pil_to_base64(pil_image: Image.Image, format="PNG") -> str:
 
 
 def drawing_to_img(project):
-    x = base64_to_pil(project["input_image"]["drawing"])
+    x = base64_to_pil(project["input_image"]["drawing"][0])
 
     image_tensor = corporate_jade["stream"].preprocess_image(x)
 
