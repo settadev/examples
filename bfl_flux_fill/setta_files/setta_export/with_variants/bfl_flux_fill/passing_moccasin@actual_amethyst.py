@@ -58,7 +58,7 @@ def create_in_memory_fn(idx):
     return SettaInMemoryFn(fn=fn, dependencies=[f"input_{idx}['drawing']"])
 
 
-# fn1 = create_in_memory_fn(1)
-# fn2 = create_in_memory_fn(2)
-# fn3 = create_in_memory_fn(3)
+fn1 = create_in_memory_fn(1)
+fn2 = create_in_memory_fn(2)
+fn3 = create_in_memory_fn(3)
 fn3 = create_in_memory_fn(4)
