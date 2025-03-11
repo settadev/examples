@@ -1,4 +1,4 @@
-## FLUX.1-Fill-dev Iterative Outpainting
+## FLUX.1-Fill-dev Inpainting
 
 To automatically download the model, you'll need to:
 1. Create a Hugging Face account.
@@ -7,6 +7,4 @@ To automatically download the model, you'll need to:
 
 Then in this UI, paste your token into the Global Variables `token` field.
 
-Click `Run` to download the model, and start the iterative outpainting process.
-
-Click `Stop` to end the program.
+Click `Run` to download the model and run inpainting on all 4 images. For each image, draw the mask in white. You can run inpainting on your latest masks by pressing keyboard shortcut Alt + I. The prompts are located above each drawing area.
